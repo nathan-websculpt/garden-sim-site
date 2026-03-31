@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="600" y1="0" x2="600" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9EEDC" />
+      <stop offset="1" stop-color="#F7E8D3" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="80" y="70" width="1040" height="490" rx="36" fill="#FFF8EE" fill-opacity=".94" />
+  <path d="M80 420C200 372 320 430 450 398C560 372 690 420 840 392C980 364 1050 410 1120 386V560H80V420Z" fill="#7FA073" />
+  <path d="M80 466C250 430 330 488 470 456C620 420 750 492 930 446C1010 426 1060 442 1120 432V560H80V466Z" fill="#5E7D60" />
+  <text x="150" y="250" font-family="Georgia, serif" font-size="110" fill="#3C3328">
+    Garden Sim
+  </text>
+  <text x="154" y="318" font-family="Trebuchet MS, sans-serif" font-size="38" fill="#4A5F48">
+    Cozy pixel-art gardening game demo
+  </text>
+  <g fill="#E7AFC2">
+    <circle cx="220" cy="420" r="24" />
+    <circle cx="300" cy="446" r="18" />
+    <circle cx="390" cy="430" r="22" />
+  </g>
+  <g fill="#DDA56A">
+    <circle cx="890" cy="420" r="20" />
+    <circle cx="960" cy="444" r="16" />
+    <circle cx="1040" cy="426" r="19" />
+  </g>
+</svg>

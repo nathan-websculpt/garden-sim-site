@@ -1,65 +1,66 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Features from "@/components/Features";
+import Hero from "@/components/Hero";
+import VideoSection from "@/components/VideoSection";
+import { siteConfig } from "@/lib/site";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Explore Garden Sim, a cozy pixel-art gardening game and solo-dev project focused on flowers, crops, and a peaceful tending loop in the public demo.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Garden Sim | Cozy Gardening Demo",
+    description:
+      "A cozy pixel-art gardening game made by a gardener, with flowers, crops, and a calm tending loop. Follow development and try the early demo.",
+    url: "/",
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Garden Sim garden scene with flowers and crops",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Garden Sim | Cozy Gardening Demo",
+    description:
+      "A cozy pixel-art gardening game made by a gardener. Follow the demo and support solo development.",
+    images: [siteConfig.ogImage],
+  },
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Hero />
+      <section aria-labelledby="about-game" className="pb-10 sm:pb-14">
+        <div className="garden-container">
+          <div className="section-shell relative overflow-hidden">
+            <div className="pointer-events-none absolute -right-12 top-6 h-28 w-28 rounded-full bg-[#cfe3ef]/55 blur-2xl" />
+            <div className="pointer-events-none absolute -left-8 bottom-8 h-24 w-24 rounded-full bg-[#91ab89]/40 blur-2xl" />
+            <h2 id="about-game" className="text-2xl sm:text-3xl">
+              About the Game
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-8 text-[#60705f] sm:text-lg">
+              Garden Sim is an indie gardening game I am building solo.
+              I started this project from my love of growing things, and I
+              want each patch of land to feel welcoming, calm, and alive with
+              flowers as much as food.
+            </p>
+            <p className="mt-4 max-w-3xl text-base leading-8 text-[#60705f] sm:text-lg">
+              The current public demo is an early look at one map and the overall direction. 
+              If you enjoy what is here, your support helps me continue the development.
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+      <Features />
+      <VideoSection />
+    </>
   );
 }

@@ -62,7 +62,7 @@ Garden Sim website built with Next.js (App Router), TypeScript, and Tailwind CSS
 - Hero (image + copy)
 - About
 - Features
-- Demo Trailer
+- Demo
 - Footer
 
 ### Garden Journal (/garden-journal)

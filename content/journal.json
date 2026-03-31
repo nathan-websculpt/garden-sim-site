@@ -1,0 +1,29 @@
+[
+  {
+    "id": "entry-003",
+    "slug": "petal-beds-and-market-crate-pass",
+    "title": "Petal Beds and Market Crates",
+    "image": "/images/journal/entry-petal-beds.svg",
+    "alt": "Rows of pink flowers and stacked market crates in a pixel garden",
+    "description": "Today I tuned the flower beds so blooms read clearly from a distance and still feel soft up close. I also rebuilt market crates to better show daily harvest totals. The garden now feels more alive when flowers and crops are side by side, which has been a big goal for this build. This update is in the current demo map and gives the loop a warmer sense of progress.",
+    "timestamp": "March 29, 2026"
+  },
+  {
+    "id": "entry-002",
+    "slug": "evening-lighting-pass",
+    "title": "Evening Lighting Pass",
+    "image": "/images/journal/entry-evening-light.svg",
+    "alt": "Warm evening light over crops and fences in a pixel-art garden",
+    "description": "I spent the day adjusting evening light values so the garden keeps a cozy look as the day winds down. Fence edges and crop rows now pick up gentle highlights instead of flattening into one tone. The calmer color transitions make the demo easier on the eyes and help flowers stay readable without pushing brightness too hard.",
+    "timestamp": "March 22, 2026"
+  },
+  {
+    "id": "entry-001",
+    "slug": "demo-map-loop-foundation",
+    "title": "Demo Map Loop Foundation",
+    "image": "/images/journal/entry-demo-loop.svg",
+    "alt": "Early demo map with flower plots and a small path",
+    "description": "This was the first full pass on the demo map where watering, harvesting, and replanting all connected in one peaceful daily loop. It is still an early slice, but it finally feels like a real place instead of test tiles. I am sharing this build as the starting point for public feedback while I keep adding details and polish.",
+    "timestamp": "March 15, 2026"
+  }
+]

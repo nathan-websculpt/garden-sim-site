@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" fill="#F1DAB6" />
+  <path d="M0 360H1200V750H0V360Z" fill="#7F996D" />
+  <path d="M0 430C120 404 260 456 400 432C580 396 680 468 840 430C980 396 1080 446 1200 420V750H0V430Z" fill="#5F7D5E" />
+  <path d="M100 370L240 300L380 370V540H100V370Z" fill="#E8C69B" />
+  <rect x="146" y="414" width="70" height="120" rx="10" fill="#B88C5A" />
+  <rect x="264" y="414" width="70" height="120" rx="10" fill="#B88C5A" />
+  <path d="M740 372L860 312L980 372V540H740V372Z" fill="#E8C69B" />
+  <rect x="782" y="414" width="64" height="120" rx="10" fill="#B88C5A" />
+  <rect x="876" y="414" width="64" height="120" rx="10" fill="#B88C5A" />
+  <circle cx="1024" cy="186" r="72" fill="#F5BA74" fill-opacity=".75" />
+  <text x="90" y="124" font-family="Trebuchet MS, sans-serif" font-size="46" fill="#564638">
+    journal image placeholder - evening light
+  </text>
+</svg>
