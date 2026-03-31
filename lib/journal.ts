@@ -5,6 +5,7 @@ export type JournalEntry = {
   slug: string;
   title: string;
   image: string;
+  imagePosition?: string;
   alt: string;
   description: string;
   timestamp: string;

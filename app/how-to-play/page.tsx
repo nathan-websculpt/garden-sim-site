@@ -43,8 +43,7 @@ export default function HowToPlayPage() {
             This page is growing next.
           </p>
           <p className="mt-3 max-w-2xl text-base leading-8 text-[#60705f] sm:text-lg">
-            I will add the full walkthrough for controls, core garden loop, and
-            demo tips after the next content pass.
+            I will add the full How-to-Play later on ...
           </p>
         </div>
       </div>

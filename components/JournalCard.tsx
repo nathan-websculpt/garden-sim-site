@@ -26,6 +26,7 @@ export default function JournalCard({ entry }: JournalCardProps) {
           fill
           sizes="(min-width: 1280px) 650px, (min-width: 768px) 80vw, 95vw"
           className="object-cover"
+          style={{ objectPosition: entry.imagePosition ?? "50% 50%" }}
         />
       </div>
       <div className="p-5 sm:p-6">
