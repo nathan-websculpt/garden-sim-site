@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import StoreSection from "@/components/StoreSection";
 import VideoSection from "@/components/VideoSection";
 import VisionSection from "@/components/VisionSection";
 import { siteConfig } from "@/lib/site";
@@ -56,7 +57,7 @@ export default function HomePage() {
                   flowers as much as food. 
                 </p>
                 <p>
-                  That's why growing flowers in Garden Sim gives the garden a real boost. 
+                  That&apos;s why growing flowers in Garden Sim gives the garden a real boost. 
                   Just like in the real world &mdash; where flowers bring pollinators and crop-health, 
                   flowers are the only way to truly progress in Garden Sim.
                 </p>
@@ -73,6 +74,7 @@ export default function HomePage() {
       </section>
       <VisionSection />
       <Features />
+      <StoreSection />
       <VideoSection />
     </>
   );
