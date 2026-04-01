@@ -5,15 +5,17 @@ export default function VideoSection() {
     <section id="demo-trailer" aria-labelledby="demo-trailer-heading" className="pb-14 sm:pb-16">
       <div className="garden-container">
         <div className="section-shell">
-          <h2 id="demo-trailer-heading" className="text-2xl sm:text-3xl">
-            Demo
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-8 text-[#60705f]">
-            Here is a video of the game play.
-            Thanks for watching and supporting a solo-dev gardening game in
-            active development.
-          </p>
-          <div className="garden-media-shell mt-7 overflow-hidden rounded-[1.4rem] shadow-[0_20px_40px_-32px_rgba(76,104,74,0.45)]">
+          <div className="home-copy-stack">
+            <h2 id="demo-trailer-heading" className="text-2xl sm:text-3xl">
+              Demo
+            </h2>
+            <p className="max-w-2xl text-base leading-8 text-[#60705f]">
+              Here is a video of the game play.
+              Thanks for watching and supporting a solo-dev gardening game in
+              active development.
+            </p>
+          </div>
+          <div className="garden-media-shell mt-8 overflow-hidden rounded-[1.4rem] shadow-[0_20px_40px_-32px_rgba(76,104,74,0.45)]">
             <div className="aspect-video">
               <iframe
                 src={siteConfig.links.youtubeEmbed}

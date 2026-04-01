@@ -9,14 +9,16 @@ export default function Hero() {
           <div className="order-2 md:order-1">
             <div className="rounded-[1.7rem] border border-[#cedccf] bg-[#fbf8f0]/95 p-6 shadow-[0_22px_44px_-34px_rgba(76,104,74,0.38)] sm:p-8">
               <h1 className="sr-only">Garden Sim</h1>
-              <p className="font-display text-3xl leading-tight text-[#2d3328] sm:text-4xl lg:text-5xl">
-                A cozy gardening game that was made by a gardener
-              </p>
-              <p className="mt-5 max-w-xl text-base leading-8 text-[#60705f] sm:text-lg">
-                Demo is coming soon. Your support will go towards development 
-                and hiring an artist to re-make all of this AI art.
-              </p>
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div className="home-copy-stack max-w-xl">
+                <p className="font-display text-3xl leading-tight text-[#2d3328] sm:text-4xl lg:text-5xl">
+                  A cozy gardening game that was made by a gardener
+                </p>
+                <p className="text-base leading-8 text-[#60705f] sm:text-lg">
+                  Demo is coming soon &mdash; an early look at one map and the overall direction. Your support will go towards development 
+                  and hiring an artist to re-make all of this AI art.
+                </p>
+              </div>
+              <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#demo-trailer" className="garden-button-primary">
                   Watch the Demo Trailer
                 </a>
@@ -53,7 +55,7 @@ export default function Hero() {
               </div>
             </div>
             <p className="mt-3 text-sm text-[#60705f]">
-              Your support will help hire artists to replace this AI art
+              All art is AI-generated, but your support will help to hire artists
             </p>
           </div>
         </div>

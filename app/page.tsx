@@ -44,19 +44,27 @@ export default function HomePage() {
           <div className="section-shell relative overflow-hidden">
             <div className="pointer-events-none absolute -right-12 top-6 h-28 w-28 rounded-full bg-[#cfe3ef]/55 blur-2xl" />
             <div className="pointer-events-none absolute -left-8 bottom-8 h-24 w-24 rounded-full bg-[#91ab89]/40 blur-2xl" />
-            <h2 id="about-game" className="text-2xl sm:text-3xl">
-              About the Game
-            </h2>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-[#60705f] sm:text-lg">
-              Garden Sim is an indie gardening game I am building solo.
-              I started this project from my love of growing things, and I
-              want each patch of land to feel welcoming, calm, and alive with
-              flowers as much as food.
-            </p>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-[#60705f] sm:text-lg">
-              The current public demo is an early look at one map and the overall direction. 
-              If you enjoy what is here, your support helps me continue the development.
-            </p>
+            <div className="home-copy-stack">
+              <h2 id="about-game" className="text-2xl sm:text-3xl">
+                About the Game
+              </h2>
+              <div className="home-paragraph-stack max-w-3xl text-base leading-8 text-[#60705f] sm:text-lg">
+                <p>
+                  Garden Sim is an indie gardening game that I am building solo.
+                  I started this project from my love for growing things, and I
+                  want each patch of land to feel welcoming and alive with
+                  flowers as much as food. 
+                </p>
+                <p>
+                  That's why growing flowers in Garden Sim gives the garden a real boost. 
+                  Just like in the real world &mdash; where flowers bring pollinators and crop-health, 
+                  flowers are the only way to truly progress in Garden Sim.
+                </p>
+                <p>
+                  
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
