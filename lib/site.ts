@@ -27,5 +27,6 @@ export const siteConfig = {
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/garden-journal", label: "Garden Journal" },
+  { href: "/technicals", label: "Technicals" },
   { href: "/how-to-play", label: "How to Play" },
 ] as const;
