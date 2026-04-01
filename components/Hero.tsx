@@ -65,7 +65,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <p className="mt-3 text-sm text-[#60705f]">
+            <p className="mt-3 text-sm text-[#60705f]" style={{ marginLeft: "20px" }}>
               All art is AI-generated, but your support will help to hire artists
             </p>
           </div>
