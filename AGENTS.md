@@ -20,6 +20,7 @@ Garden Sim website built with Next.js (App Router), TypeScript, and Tailwind CSS
 - Mobile-first responsive design
 - Soft, cozy visual design (avoid harsh whites)
 - No dark mode (for now)
+- Approved visible site copy is locked unless explicitly re-approved
 
 ---
 
@@ -61,6 +62,7 @@ Garden Sim website built with Next.js (App Router), TypeScript, and Tailwind CSS
 ### Home (/)
 - Hero (image + copy)
 - About
+- The Vision for the Full Game (long-term direction beyond demo)
 - Features
 - Demo
 - Footer
@@ -164,6 +166,7 @@ Target phrases:
 - Hero image is provided externally and must be inserted manually
 - Journal content is manually updated via JSON
 - Keep everything easy to edit and extend
+- Keep approved visible copy exactly as written unless a content pass approves changes
 
 ---
 

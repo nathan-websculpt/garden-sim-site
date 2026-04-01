@@ -20,7 +20,7 @@ const breeSerif = Bree_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Garden Sim | Cozy Gardening Demo",
+    default: "Garden Sim | Cozy Pixel-Art Gardening Demo",
     template: "%s | Garden Sim",
   },
   description: siteConfig.description,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: "Garden Sim | Cozy Gardening Demo",
+    title: "Garden Sim | Cozy Pixel-Art Gardening Demo",
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Garden Sim | Cozy Gardening Demo",
+    title: "Garden Sim | Cozy Pixel-Art Gardening Demo",
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },

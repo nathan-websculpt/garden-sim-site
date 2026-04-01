@@ -2,19 +2,20 @@ import type { Metadata } from "next";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import VideoSection from "@/components/VideoSection";
+import VisionSection from "@/components/VisionSection";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Cozy Gardening Demo",
   description:
-    "Explore Garden Sim, a cozy pixel-art gardening game and solo-dev project focused on flowers, crops, and a peaceful tending loop in the public demo.",
+    "Garden Sim is an indie gardening game I am building solo. The public demo is an early look at flowers, crops, and a peaceful tending loop.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Garden Sim | Cozy Gardening Demo",
+    title: "Garden Sim | Cozy Pixel-Art Gardening Demo",
     description:
-      "A cozy pixel-art gardening game made by a gardener, with flowers, crops, and a calm tending loop. Follow development and try the early demo.",
+      "A cozy pixel-art gardening game made by a gardener. Explore the early demo and follow the long-term vision for a fuller world of flowers and crops.",
     url: "/",
     images: [
       {
@@ -27,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Garden Sim | Cozy Gardening Demo",
+    title: "Garden Sim | Cozy Pixel-Art Gardening Demo",
     description:
-      "A cozy pixel-art gardening game made by a gardener. Follow the demo and support solo development.",
+      "A gardener-made, solo-dev cozy pixel-art gardening game. Try the early demo and follow development.",
     images: [siteConfig.ogImage],
   },
 };
@@ -59,6 +60,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <VisionSection />
       <Features />
       <VideoSection />
     </>

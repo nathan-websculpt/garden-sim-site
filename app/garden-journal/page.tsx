@@ -6,14 +6,14 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Garden Journal",
   description:
-    "Read the Garden Sim development journal with cozy demo updates, flower and crop progress, and behind-the-scenes notes from the solo developer.",
+    "Some real-life plants and garden snapshots from the solo gardener-developer building Garden Sim.",
   alternates: {
     canonical: "/garden-journal",
   },
   openGraph: {
     title: "Garden Journal | Garden Sim",
     description:
-      "Follow cozy development updates for Garden Sim with new journal entries posted newest first.",
+      "Real-life plants and cozy snapshots from the gardener behind Garden Sim, shared newest first.",
     url: "/garden-journal",
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Garden Journal | Garden Sim",
     description:
-      "Newest-first devlog feed for Garden Sim with demo progress and garden updates.",
+      "Newest-first real-life plant snapshots and notes from the solo gardener-developer behind Garden Sim.",
     images: [siteConfig.ogImage],
   },
 };

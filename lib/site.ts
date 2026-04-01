@@ -3,13 +3,15 @@ export const siteConfig = {
   domain: "garden-sim.com",
   url: "https://garden-sim.com",
   description:
-    "Garden Sim is a cozy pixel-art gardening game made by a gardener. Grow flowers and crops, tend a peaceful plot, and follow development through the public demo and garden journal.",
+    "Garden Sim is a cozy pixel-art gardening game made by a gardener and built solo. Grow flowers and crops in the public demo, then follow development as the game grows toward a fuller garden life.",
   keywords: [
     "garden simulation game",
     "cozy gardening game",
     "pixel-art gardening game",
     "indie gardening game",
     "solo-dev gardening game",
+    "flowers and crops game",
+    "gardening demo game",
   ],
   heroImage: "/images/home-hero.png",
   ogImage: "/images/og-cover.svg",
