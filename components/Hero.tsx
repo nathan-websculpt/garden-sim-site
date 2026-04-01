@@ -18,6 +18,17 @@ export default function Hero() {
                   and hiring an artist to re-make all of this AI art.
                 </p>
               </div>
+              <div className="pt-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[#4f614e] sm:text-base">
+                  Demo features
+                </p>
+                <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-7 text-[#4f614e] sm:text-base">
+                  <li>4 plants and 4 secret plants to find</li>
+                  <li>fast-travel</li>
+                  <li>apiaries</li>
+                  <li>NPC helpers</li>
+                </ul>
+              </div>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#demo-trailer" className="garden-button-primary">
                   Watch the Demo Trailer

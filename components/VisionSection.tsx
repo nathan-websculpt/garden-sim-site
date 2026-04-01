@@ -28,7 +28,7 @@ export default function VisionSection() {
                     Soil health will only be improved via new trees that will be introduced later on.
                   </p>
                   <p>
-                    Some maps will be monocrops, while other maps will have people that need your help. 
+                    Some maps will be monocrops, while other maps will have people that need  with <i>their gardens</i>. 
                   </p>
                 </div>
               </div>
