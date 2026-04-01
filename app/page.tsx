@@ -63,7 +63,7 @@ export default function HomePage() {
                 </p>
                 <p>
                   Another realistic aspect to Garden Sim is how fertilizers affect the yield you harvest from each plant. 
-                  Each plant has a preferred NPK (just like in the real world), and your various fertilizers can be used 
+                  Every plant has a preferred NPK (just like in the real world), and your various fertilizers can be used 
                   to fulfill that NPK as well as to supply extra food to the plant. Some fertilizers can alter your BASE YIELD, 
                   while others affect your YIELD MULTIPLIER.
                 </p>
