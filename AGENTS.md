@@ -157,7 +157,7 @@ Target phrases:
 
 - Ko-fi: REPLACE_ME_LATER
 - YouTube: REPLACE_ME_LATER
-- itch.io: REPLACE_ME_LATER
+- itch.io: https://garden-sim.itch.io/garden-sim
 
 ---
 
