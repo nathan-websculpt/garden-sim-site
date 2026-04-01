@@ -10,13 +10,10 @@ export default function Hero() {
             <div className="rounded-[1.7rem] border border-[#cedccf] bg-[#fbf8f0]/95 p-6 shadow-[0_22px_44px_-34px_rgba(76,104,74,0.38)] sm:p-8">
               <h1 className="sr-only">Garden Sim</h1>
               <p className="font-display text-3xl leading-tight text-[#2d3328] sm:text-4xl lg:text-5xl">
-                A cozy pixel-art gardening game made by a gardener, where
-                flowers matter just as much as the harvest.
+                A cozy gardening game that was made by a gardener
               </p>
               <p className="mt-5 max-w-xl text-base leading-8 text-[#60705f] sm:text-lg">
-                This is a solo-dev gardening game centered around flowers,
-                crops, and a peaceful tending loop. The current demo is an
-                early look at the game, and your support will go towards development 
+                Demo is coming soon. Your support will go towards development 
                 and hiring an artist to re-make all of this AI art.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
