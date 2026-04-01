@@ -23,7 +23,7 @@ export default function Hero() {
                   Demo features
                 </p>
                 <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-7 text-[#4f614e] sm:text-base">
-                  <li>4 plants and 4 secret plants to find</li>
+                  <li>4 starter plants and 4 secret plants to find</li>
                   <li>fast-travel</li>
                   <li>apiaries</li>
                   <li>NPC helpers</li>
