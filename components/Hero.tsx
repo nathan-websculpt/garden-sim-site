@@ -14,7 +14,7 @@ export default function Hero() {
                   A cozy gardening game that was made by a gardener
                 </p>
                 <p className="text-base leading-8 text-[#60705f] sm:text-lg">
-                  Demo is coming soon &mdash; an early look at one map and the overall direction. Your support will go towards development 
+                  Demo is coming soon &mdash; an early look at one map and the overall direction of the game. Your support will go towards development 
                   and hiring an artist to re-make all of this AI art.
                 </p>
               </div>

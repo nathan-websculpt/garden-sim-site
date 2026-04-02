@@ -11,7 +11,7 @@ export default function VideoSection() {
             </h2>
             <p className="max-w-2xl text-base leading-8 text-[#60705f]">
               Here is a video of the game play.
-              Thanks for watching and supporting a solo-dev gardening game in
+              Thanks for watching and supporting a solo-dev garden simulator in
               active development.
             </p>
           </div>

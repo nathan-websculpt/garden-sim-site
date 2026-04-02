@@ -155,7 +155,7 @@ Target phrases:
 
 ## External Links (placeholders)
 
-- Ko-fi: REPLACE_ME_LATER
+- Ko-fi: https://ko-fi.com/gardensim
 - YouTube: REPLACE_ME_LATER
 - itch.io: https://garden-sim.itch.io/garden-sim
 

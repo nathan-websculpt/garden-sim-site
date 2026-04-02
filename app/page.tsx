@@ -51,7 +51,7 @@ export default function HomePage() {
               </h2>
               <div className="home-paragraph-stack max-w-3xl text-base leading-8 text-[#60705f] sm:text-lg">
                 <p>
-                  Garden Sim is an indie gardening game that I am building solo.
+                  Garden Sim is an indie garden simulator that I am building solo.
                   I started this project from my love for growing things, and I
                   want each patch of land to feel welcoming and alive with
                   flowers as much as food. 
@@ -63,7 +63,7 @@ export default function HomePage() {
                 </p>
                 <p>
                   Another realistic aspect to Garden Sim is how fertilizers affect the yield you harvest from each plant. 
-                  Every plant has a preferred NPK (just like in the real world), and your various fertilizers can be used 
+                  Every plant has a preferred NPK (just like real plants do), and your various fertilizers can be used 
                   to fulfill that NPK as well as to supply extra food to the plant. Some fertilizers can alter your BASE YIELD, 
                   while others affect your YIELD MULTIPLIER.
                 </p>
