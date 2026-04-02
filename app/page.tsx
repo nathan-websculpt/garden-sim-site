@@ -7,31 +7,31 @@ import VisionSection from "@/components/VisionSection";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Cozy Gardening Demo",
+  title: "A cozy gardening game that was made by a gardener",
   description:
-    "Garden Sim is an indie gardening game I am building solo. The public demo is an early look at flowers, crops, and a peaceful tending loop.",
+    "Garden Sim is an indie garden simulator that I am building solo. Demo is coming soon - an early look at one map and the overall direction of the game.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Garden Sim | Cozy Pixel-Art Gardening Demo",
+    title: "A cozy gardening game that was made by a gardener | Garden Sim",
     description:
-      "A cozy pixel-art gardening game made by a gardener. Explore the early demo and follow the long-term vision for a fuller world of flowers and crops.",
+      "Garden Sim is an indie garden simulator that I am building solo. Demo is coming soon - an early look at one map and the overall direction of the game.",
     url: "/",
     images: [
       {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "Garden Sim garden scene with flowers and crops",
+        alt: "Garden Sim hero artwork with a cozy pixel-art garden scene",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Garden Sim | Cozy Pixel-Art Gardening Demo",
+    title: "A cozy gardening game that was made by a gardener | Garden Sim",
     description:
-      "A gardener-made, solo-dev cozy pixel-art gardening game. Try the early demo and follow development.",
+      "Garden Sim is an indie garden simulator that I am building solo. Demo is coming soon - an early look at one map and the overall direction of the game.",
     images: [siteConfig.ogImage],
   },
 };

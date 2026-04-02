@@ -3,27 +3,30 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Technicals",
-  description: "Technical details for Garden Sim's game build and stack.",
+  description:
+    "SDL3 game (no game engine used) with C++20, tmxlite, nlohmann, and plf.",
   alternates: {
     canonical: "/technicals",
   },
   openGraph: {
     title: "Technicals | Garden Sim",
-    description: "Technical details for Garden Sim's game build and stack.",
+    description:
+      "SDL3 game (no game engine used) with C++20, tmxlite, nlohmann, and plf.",
     url: "/technicals",
     images: [
       {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "Garden Sim technical details page",
+        alt: "SDL3 game (no game engine used)",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Technicals | Garden Sim",
-    description: "Technical details for Garden Sim's game build and stack.",
+    description:
+      "SDL3 game (no game engine used) with C++20, tmxlite, nlohmann, and plf.",
     images: [siteConfig.ogImage],
   },
 };

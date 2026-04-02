@@ -7,22 +7,29 @@ Current visible website copy is the approved baseline and is intentionally locke
 - keep existing visible copy exactly as written unless a future copy approval explicitly says otherwise
 - do not polish, shorten, or rephrase locked text
 - preserve the personal, cozy, gardener-made solo-dev voice
+- metadata and docs must conform to site copy, not the reverse
 
-## Messaging Direction
+## Canonical Copy Sources
 
-- the site presents Garden Sim as a cozy pixel-art gardening game
-- the project is made by a gardener and developed solo
-- the current emphasis is the public demo
-- flowers and crops are both core to how the game is described
-- the homepage includes **The Vision for the Full Game** to explain the long-term direction beyond demo scope
+- `components/Hero.tsx`
+- `app/page.tsx` (About the Game copy)
+- `components/VisionSection.tsx`
+- `components/Features.tsx`
+- `components/StoreSection.tsx`
+- `components/VideoSection.tsx`
+- `app/garden-journal/page.tsx`
+- `content/journal.json`
+- `app/how-to-play/page.tsx`
+- `app/technicals/page.tsx`
+- existing alt text in components and journal entries
 
-## Homepage Messaging Map
+## Messaging Snapshot (Current Copy)
 
-- Hero: core identity and demo framing
-- About the Game: personal project context and current demo scope
-- The Vision for the Full Game: long-term direction beyond the current demo
-- Features: current systems and gameplay pillars
-- Demo: trailer and support links
+- "A cozy gardening game that was made by a gardener"
+- "Demo is coming soon - an early look at one map and the overall direction of the game."
+- "Garden Sim is an indie garden simulator that I am building solo."
+- "The Vision for the Full Game"
+- "Here is a video of the game play."
 
 ## Placeholder Guidance
 

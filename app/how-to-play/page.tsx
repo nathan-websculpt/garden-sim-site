@@ -4,21 +4,21 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "How to Play",
   description:
-    "How to Play is growing next. The full guide for Garden Sim's cozy gardening loop will be added as the demo keeps growing.",
+    "This page is growing next. I will add the full How-to-Play later on ...",
   alternates: {
     canonical: "/how-to-play",
   },
   openGraph: {
     title: "How to Play | Garden Sim",
     description:
-      "This page is growing next and will expand into the full how-to-play guide for Garden Sim.",
+      "This page is growing next. I will add the full How-to-Play later on ...",
     url: "/how-to-play",
     images: [
       {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "Garden Sim how to play placeholder",
+        alt: "This page is growing next.",
       },
     ],
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How to Play | Garden Sim",
     description:
-      "This page is growing next and will expand into the full how-to-play guide for Garden Sim.",
+      "This page is growing next. I will add the full How-to-Play later on ...",
     images: [siteConfig.ogImage],
   },
 };

@@ -20,7 +20,7 @@ const breeSerif = Bree_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Garden Sim | Cozy Pixel-Art Gardening Demo",
+    default: "Garden Sim | A cozy gardening game that was made by a gardener",
     template: "%s | Garden Sim",
   },
   description: siteConfig.description,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: "Garden Sim | Cozy Pixel-Art Gardening Demo",
+    title: "Garden Sim | A cozy gardening game that was made by a gardener",
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "Garden Sim cozy garden scene with flowers and crops",
+        alt: "Garden Sim hero artwork with a cozy pixel-art garden scene",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Garden Sim | Cozy Pixel-Art Gardening Demo",
+    title: "Garden Sim | A cozy gardening game that was made by a gardener",
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },

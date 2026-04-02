@@ -1,4 +1,4 @@
-# AGENTS.md — Garden Sim Website
+# AGENTS.md - Garden Sim Website
 
 ## Project Overview
 Garden Sim website built with Next.js (App Router), TypeScript, and Tailwind CSS.
@@ -24,6 +24,35 @@ Garden Sim website built with Next.js (App Router), TypeScript, and Tailwind CSS
 
 ---
 
+## Copy Authority and Immutability (Required)
+
+Site copy is immutable by default.
+
+- Never modify, rewrite, rephrase, shorten, expand, or "improve" any existing visible site copy unless explicit copy approval is provided
+- Metadata and documentation must be derived from current site copy; site copy is the source of truth
+- When metadata/docs conflict with site copy, update metadata/docs to match site copy
+- Existing alt text is part of locked copy and must not be rewritten
+- Do not introduce new marketing claims, tone, or product messaging not already present in site copy
+
+Canonical copy locations:
+
+- `components/Hero.tsx`
+- `app/page.tsx` (About the Game copy)
+- `components/VisionSection.tsx`
+- `components/Features.tsx`
+- `components/StoreSection.tsx`
+- `components/VideoSection.tsx`
+- `components/Footer.tsx`
+- `app/garden-journal/page.tsx`
+- `content/journal.json`
+- `app/how-to-play/page.tsx`
+- `app/technicals/page.tsx`
+- existing alt text in components and journal entries
+
+If a task requests copy changes without explicit copy approval, do not edit copy and call this constraint out.
+
+---
+
 ## Tech Stack
 
 - Next.js (App Router)
@@ -39,14 +68,19 @@ Garden Sim website built with Next.js (App Router), TypeScript, and Tailwind CSS
   /page.tsx                # Home
   /garden-journal/page.tsx
   /how-to-play/page.tsx
+  /technicals/page.tsx
 /components
   Header.tsx
   Hero.tsx
   Features.tsx
+  StoreSection.tsx
+  VisionSection.tsx
   VideoSection.tsx
   JournalCard.tsx
+  Footer.tsx
 /lib
   journal.ts
+  site.ts
 /content
   journal.json
 /public
@@ -61,9 +95,10 @@ Garden Sim website built with Next.js (App Router), TypeScript, and Tailwind CSS
 
 ### Home (/)
 - Hero (image + copy)
-- About
-- The Vision for the Full Game (long-term direction beyond demo)
+- About the Game
+- The Vision for the Full Game
 - Features
+- Store
 - Demo
 - Footer
 
@@ -79,6 +114,10 @@ Garden Sim website built with Next.js (App Router), TypeScript, and Tailwind CSS
 ### How to Play (/how-to-play)
 - Placeholder page for now
 
+### Technicals (/technicals)
+- SDL3 game (no game engine used)
+- C++20 and supporting library notes
+
 ---
 
 ## Header / Navigation
@@ -87,10 +126,11 @@ Desktop:
 - Top-left nav:
   - Home
   - Garden Journal
+  - Technicals
   - How to Play
 - Top-right:
   - Ko-fi button
-- NOT sticky
+- Not sticky
 
 Mobile:
 - Collapsed nav
@@ -125,11 +165,15 @@ type JournalEntry = {
 - robots.txt
 - Semantic HTML
 
-Target phrases:
-- garden simulation game
+Use current site copy language in metadata and avoid introducing claims not present in copy.
+
+Current copy-aligned phrases include:
 - cozy gardening game
-- pixel-art gardening game
-- indie gardening game
+- indie garden simulator
+- flowers and crops
+- demo is coming soon
+- garden morale
+- bee keeping
 
 ---
 
@@ -163,7 +207,7 @@ Target phrases:
 
 ## Notes
 
-- Hero image is provided externally and must be inserted manually
+- Hero image path is configured in `lib/site.ts`
 - Journal content is manually updated via JSON
 - Keep everything easy to edit and extend
 - Keep approved visible copy exactly as written unless a content pass approves changes
@@ -179,7 +223,7 @@ These rules are mandatory
 3) keep comments short and to the point; fragments are fine  
 4) do not end comments with a period  
 5) comments explain why, constraints, or non-obvious reasoning  
-6) never narrate what the code already clearly expresses 
+6) never narrate what the code already clearly expresses
 
 ---
 
