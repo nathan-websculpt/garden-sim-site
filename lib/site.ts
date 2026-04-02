@@ -16,9 +16,9 @@ export const siteConfig = {
   ogImage: "/images/og-cover.svg",
   links: {
     kofi: "https://ko-fi.com/gardensim",
-    youtubeTrailer: "https://www.youtube.com/watch?v=REPLACE_ME_LATER",
-    youtubeEmbed: "https://www.youtube.com/embed/REPLACE_ME_LATER",
-    youtubeChannel: "https://www.youtube.com/@REPLACE_ME_LATER",
+    youtubeTrailer: "https://www.youtube.com/watch?v=NMSl7ALI3FU",
+    youtubeEmbed: "https://www.youtube.com/embed/NMSl7ALI3FU?si=-SpbU-qk5fk22CHl",
+    youtubeChannel: "https://www.youtube.com/@garden-sim",
     itch: "https://garden-sim.itch.io/garden-sim",
   },
 } as const;

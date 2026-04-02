@@ -45,13 +45,6 @@ export default function VideoSection() {
               Support on Ko-fi
             </a>
           </div>
-          <p className="mt-4 text-sm text-[#60705f]">
-            Update trailer links in{" "}
-            <code className="garden-inline-code rounded px-1 py-0.5 text-xs">
-              lib/site.ts
-            </code>
-            .
-          </p>
         </div>
       </div>
     </section>
