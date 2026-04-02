@@ -50,7 +50,7 @@ export default function Hero() {
               <div className="pointer-events-none absolute -bottom-6 right-1 h-16 w-16 rounded-full bg-[#91ab89]/60 blur-lg" />
               <div className="pointer-events-none absolute right-10 top-3 h-4 w-4 rounded-full bg-[#d06a59]/65" />
               <div className="relative overflow-hidden rounded-[1.2rem] border border-[#d7e3d8] bg-[#f4f8f2]">
-                <div className="garden-chip absolute left-4 top-4 z-10 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">
+                <div className="garden-chip absolute bottom-4 left-4 z-10 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">
                   coming soon
                 </div>
                 <div className="relative aspect-[16/11]">
