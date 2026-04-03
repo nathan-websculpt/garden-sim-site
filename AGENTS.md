@@ -173,7 +173,7 @@ Current copy-aligned phrases include:
 - flowers and crops
 - demo is coming soon
 - garden morale
-- bee keeping
+- beekeeping
 
 ---
 

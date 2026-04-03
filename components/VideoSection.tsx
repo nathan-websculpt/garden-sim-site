@@ -9,7 +9,7 @@ export default function VideoSection() {
           Demo
         </h2>
         <p className="max-w-2xl text-base leading-8 text-[var(--text-muted)]">
-          Here is a video of the game play.
+          Here is a video of the gameplay.
           Thanks for watching and supporting a solo-dev garden simulator in
           active development.
         </p>

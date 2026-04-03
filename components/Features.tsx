@@ -12,7 +12,7 @@ const featureCards = [
       "Plant Health and Fertilizers determine the yield at time of harvest. Plants prefer certain NPKs which various fertilizers provide.",
   },
   {
-    title: "Bee Keeping",
+    title: "Beekeeping",
     description:
       "Apiaries can be added when you have enough Garden Morale, and this is the only way to replenish Plant Health.",
   },

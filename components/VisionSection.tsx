@@ -25,7 +25,7 @@ export default function VisionSection() {
                 </p>
                 <p>
                   Soil health will be an element to the full game as well as soil acidity levels &mdash;
-                  these will be affected by which plants are on/next-to a tile as well as fertilizers/ammendments.
+                  these will be affected by which plants are on/next-to a tile as well as fertilizers/amendments.
                   Soil health will only be improved via new trees that will be introduced later on.
                 </p>
                 <p>

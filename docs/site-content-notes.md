@@ -29,7 +29,7 @@ Current visible website copy is the approved baseline and is intentionally locke
 - "Demo is coming soon - an early look at one map and the overall direction of the game."
 - "Garden Sim is an indie garden simulator that I am building solo."
 - "The Vision for the Full Game"
-- "Here is a video of the game play."
+- "Here is a video of the gameplay."
 
 ## Placeholder Guidance
 

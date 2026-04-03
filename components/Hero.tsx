@@ -25,7 +25,7 @@ export default function Hero() {
                 <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-7 text-[var(--deep-green)] sm:text-base">
                   <li>4 starter plants and 4 secret plants to find</li>
                   <li>fast-travel</li>
-                  <li>bee keeping</li>
+                  <li>beekeeping</li>
                   <li>NPC helpers</li>
                 </ul>
               </div>

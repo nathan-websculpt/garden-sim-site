@@ -9,7 +9,7 @@ export const siteConfig = {
     "indie garden simulator",
     "flowers and crops",
     "garden morale",
-    "bee keeping",
+    "beekeeping",
     "demo is coming soon",
   ],
   heroImage: "/images/home-hero.png",
