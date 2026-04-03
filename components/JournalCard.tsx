@@ -30,8 +30,8 @@ export default function JournalCard({ entry }: JournalCardProps) {
         />
       </div>
       <div className="p-5 sm:p-6">
-        <h2 className="text-2xl text-[#2d3328]">{entry.title}</h2>
-        <p className="mt-3 text-base leading-8 text-[#60705f]">
+        <h2 className="text-2xl text-[var(--text-primary)]">{entry.title}</h2>
+        <p className="mt-3 text-base leading-8 text-[var(--text-muted)]">
           {visibleDescription}
         </p>
         {canExpand ? (
@@ -43,7 +43,7 @@ export default function JournalCard({ entry }: JournalCardProps) {
             {expanded ? "Show less" : "Read more"}
           </button>
         ) : null}
-        <p className="mt-5 text-right text-xs font-semibold uppercase tracking-[0.08em] text-[#60705f]">
+        <p className="mt-5 text-right text-xs font-semibold uppercase tracking-[0.08em] text-[var(--text-muted)]">
           {entry.timestamp}
         </p>
       </div>

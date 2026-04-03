@@ -20,10 +20,6 @@
   --sky: #cfe3ef;
 }
 
-* {
-  border-color: var(--border-soft);
-}
-
 html,
 body {
   min-height: 100%;
@@ -196,54 +192,4 @@ a {
   border: 1px solid rgba(145, 171, 137, 0.28);
   background: #e9f0e6;
   color: #3f533c;
-}
-
-.home-copy-stack {
-  display: block;
-}
-
-.home-paragraph-stack {
-  display: block;
-}
-
-.home-chip-stack {
-  display: block;
-}
-
-.home-card-copy {
-  display: block;
-}
-
-.home-copy-stack > * + * {
-  margin-top: 1rem !important;
-}
-
-.home-paragraph-stack > * + * {
-  margin-top: 0.625rem !important;
-}
-
-.home-chip-stack > * + * {
-  margin-top: 0.75rem !important;
-}
-
-.home-card-copy > * + * {
-  margin-top: 0.5rem !important;
-}
-
-@media (min-width: 640px) {
-  .home-copy-stack > * + * {
-    margin-top: 1.125rem !important;
-  }
-
-  .home-paragraph-stack > * + * {
-    margin-top: 0.75rem !important;
-  }
-
-  .home-chip-stack > * + * {
-    margin-top: 0.875rem !important;
-  }
-
-  .home-card-copy > * + * {
-    margin-top: 0.625rem !important;
-  }
 }

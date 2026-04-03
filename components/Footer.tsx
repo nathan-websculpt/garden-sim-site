@@ -11,11 +11,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[#cedccf] bg-transparent pb-10 pt-12">
+    <footer className="border-t border-[var(--border-soft)] bg-transparent pb-10 pt-12">
       <div className="garden-container">
         <div className="section-shell">
           <h2 className="text-2xl">Follow and Support</h2>
-          <p className="mt-3 max-w-2xl text-base leading-8 text-[#60705f]">
+          <p className="mt-3 max-w-2xl text-base leading-8 text-[var(--text-muted)]">
             Thanks for spending time in this little digital garden. If you want to 
             check out some real plants, head over to the{" "}
             <Link href="/garden-journal" className="underline underline-offset-4">
@@ -30,7 +30,7 @@ export default function Footer() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`px-4 py-2 ${
+                className={`${
                   link.label === "Ko-fi Support"
                     ? "garden-button-accent"
                     : "garden-button-secondary"
@@ -40,7 +40,7 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-sm text-[#60705f]">
+          <p className="mt-8 text-sm text-[var(--text-muted)]">
             Copyright {currentYear} Garden Sim. Built with care by a gardener
             and solo developer.
           </p>
