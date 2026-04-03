@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SectionShell } from "@/components/SectionFrame";
 import { siteConfig } from "@/lib/site";
 
 const footerLinks = [
@@ -13,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-[var(--border-soft)] bg-transparent pb-10 pt-12">
       <div className="garden-container">
-        <div className="section-shell">
+        <SectionShell>
           <h2 className="text-2xl">Follow and Support</h2>
           <p className="mt-3 max-w-2xl text-base leading-8 text-[var(--text-muted)]">
             Thanks for spending time in this little digital garden. If you want to 
@@ -44,7 +45,7 @@ export default function Footer() {
             Copyright {currentYear} Garden Sim. Built with care by a gardener
             and solo developer.
           </p>
-        </div>
+        </SectionShell>
       </div>
     </footer>
   );

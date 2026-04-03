@@ -114,10 +114,6 @@ a {
   color: var(--text-primary);
 }
 
-.garden-muted {
-  color: var(--text-muted);
-}
-
 .garden-card {
   border: 1px solid var(--border-soft);
   background: var(--panel-bg);
@@ -186,10 +182,4 @@ a {
   border: 1px solid rgba(145, 171, 137, 0.42);
   background: rgba(251, 248, 240, 0.94);
   color: var(--deep-green);
-}
-
-.garden-inline-code {
-  border: 1px solid rgba(145, 171, 137, 0.28);
-  background: #e9f0e6;
-  color: #3f533c;
 }

@@ -1,36 +1,15 @@
-import type { Metadata } from "next";
 import SectionFrame from "@/components/SectionFrame";
-import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+const technicalsMetadataDescription =
+  "SDL3 game (no game engine used) with C++20, tmxlite, nlohmann, and plf.";
+
+export const metadata = buildPageMetadata({
   title: "Technicals",
-  description:
-    "SDL3 game (no game engine used) with C++20, tmxlite, nlohmann, and plf.",
-  alternates: {
-    canonical: "/technicals",
-  },
-  openGraph: {
-    title: "Technicals | Garden Sim",
-    description:
-      "SDL3 game (no game engine used) with C++20, tmxlite, nlohmann, and plf.",
-    url: "/technicals",
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: "SDL3 game (no game engine used)",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Technicals | Garden Sim",
-    description:
-      "SDL3 game (no game engine used) with C++20, tmxlite, nlohmann, and plf.",
-    images: [siteConfig.ogImage],
-  },
-};
+  description: technicalsMetadataDescription,
+  canonicalPath: "/technicals",
+  ogImageAlt: "SDL3 game (no game engine used)",
+});
 
 export default function TechnicalsPage() {
   return (
@@ -49,7 +28,15 @@ export default function TechnicalsPage() {
             <li>SDL3</li>
             <li>tmxlite</li>
             <li>nlohmann</li>
-            <li><a target="_blank" href="https://plflib.org/colony.htm">plf</a></li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://plflib.org/colony.htm"
+              >
+                plf
+              </a>
+            </li>
             <li>Built with memory-safety and modern C++ conventions in mind</li>
           </ul>
         </li>
@@ -59,7 +46,7 @@ export default function TechnicalsPage() {
             <li><i>plf::colony</i> is a high-performance container optimized for frequent 
               insertion and erasure without iterator invalidation</li>
             <li>manages memory in grouped blocks to minimize fragmentation and supports 
-              efficient "pruning" of inactive or removed elements without costly reallocations</li>
+              efficient &quot;pruning&quot; of inactive or removed elements without costly reallocations</li>
           </ul>
         </li>
         <li>

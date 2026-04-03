@@ -10,6 +10,10 @@ type SectionFrameProps = {
   children: ReactNode;
 } & ComponentPropsWithoutRef<"section">;
 
+type SectionShellProps = ComponentPropsWithoutRef<"div"> & {
+  children: ReactNode;
+};
+
 const spacingClasses: Record<SectionSpacing, string> = {
   home: "pb-10 sm:pb-14",
   inner: "pt-8 pb-14 sm:pt-12 sm:pb-16",
@@ -17,6 +21,18 @@ const spacingClasses: Record<SectionSpacing, string> = {
 
 function joinClasses(...classes: Array<string | undefined | false>) {
   return classes.filter(Boolean).join(" ");
+}
+
+export function SectionShell({
+  className,
+  children,
+  ...shellProps
+}: SectionShellProps) {
+  return (
+    <div {...shellProps} className={joinClasses("section-shell", className)}>
+      {children}
+    </div>
+  );
 }
 
 export default function SectionFrame({
@@ -32,7 +48,7 @@ export default function SectionFrame({
     <section {...sectionProps} className={joinClasses(spacingClasses[spacing], className)}>
       <div className={joinClasses("garden-container", containerClassName)}>
         {shell ? (
-          <div className={joinClasses("section-shell", shellClassName)}>{children}</div>
+          <SectionShell className={shellClassName}>{children}</SectionShell>
         ) : (
           children
         )}

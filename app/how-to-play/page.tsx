@@ -1,36 +1,15 @@
-import type { Metadata } from "next";
 import SectionFrame from "@/components/SectionFrame";
-import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+const howToPlayMetadataDescription =
+  "This page is growing next. I will add the full How-to-Play later on ...";
+
+export const metadata = buildPageMetadata({
   title: "How to Play",
-  description:
-    "This page is growing next. I will add the full How-to-Play later on ...",
-  alternates: {
-    canonical: "/how-to-play",
-  },
-  openGraph: {
-    title: "How to Play | Garden Sim",
-    description:
-      "This page is growing next. I will add the full How-to-Play later on ...",
-    url: "/how-to-play",
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: "This page is growing next.",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "How to Play | Garden Sim",
-    description:
-      "This page is growing next. I will add the full How-to-Play later on ...",
-    images: [siteConfig.ogImage],
-  },
-};
+  description: howToPlayMetadataDescription,
+  canonicalPath: "/how-to-play",
+  ogImageAlt: "This page is growing next.",
+});
 
 export default function HowToPlayPage() {
   return (

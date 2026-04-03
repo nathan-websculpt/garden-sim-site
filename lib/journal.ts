@@ -8,17 +8,18 @@ export type JournalEntry = {
   imagePosition?: string;
   alt: string;
   description: string;
+  publishedAt: string;
   timestamp: string;
 };
 
-function timestampValue(entry: JournalEntry) {
-  const value = Date.parse(entry.timestamp);
+function publishedAtValue(entry: JournalEntry) {
+  const value = Date.parse(entry.publishedAt);
   return Number.isNaN(value) ? 0 : value;
 }
 
 export function getJournalEntries() {
   return [...(journalEntries as JournalEntry[])].sort((a, b) => {
-    const byTimestamp = timestampValue(b) - timestampValue(a);
-    return byTimestamp !== 0 ? byTimestamp : b.id.localeCompare(a.id);
+    const byPublishedAt = publishedAtValue(b) - publishedAtValue(a);
+    return byPublishedAt !== 0 ? byPublishedAt : b.id.localeCompare(a.id);
   });
 }

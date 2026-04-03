@@ -1,41 +1,20 @@
-import type { Metadata } from "next";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import SectionFrame from "@/components/SectionFrame";
 import StoreSection from "@/components/StoreSection";
 import VideoSection from "@/components/VideoSection";
 import VisionSection from "@/components/VisionSection";
-import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+const homeMetadataDescription =
+  "Garden Sim is an indie garden simulator that I am building solo. Demo is coming soon - an early look at one map and the overall direction of the game.";
+
+export const metadata = buildPageMetadata({
   title: "A cozy gardening game that was made by a gardener",
-  description:
-    "Garden Sim is an indie garden simulator that I am building solo. Demo is coming soon - an early look at one map and the overall direction of the game.",
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "A cozy gardening game that was made by a gardener | Garden Sim",
-    description:
-      "Garden Sim is an indie garden simulator that I am building solo. Demo is coming soon - an early look at one map and the overall direction of the game.",
-    url: "/",
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: "Garden Sim hero artwork with a cozy pixel-art garden scene",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "A cozy gardening game that was made by a gardener | Garden Sim",
-    description:
-      "Garden Sim is an indie garden simulator that I am building solo. Demo is coming soon - an early look at one map and the overall direction of the game.",
-    images: [siteConfig.ogImage],
-  },
-};
+  description: homeMetadataDescription,
+  canonicalPath: "/",
+  ogImageAlt: "Garden Sim hero artwork with a cozy pixel-art garden scene",
+});
 
 export default function HomePage() {
   return (

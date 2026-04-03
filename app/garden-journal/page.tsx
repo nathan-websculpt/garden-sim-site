@@ -1,52 +1,30 @@
-import type { Metadata } from "next";
 import JournalCard from "@/components/JournalCard";
-import SectionFrame from "@/components/SectionFrame";
+import SectionFrame, { SectionShell } from "@/components/SectionFrame";
 import { getJournalEntries } from "@/lib/journal";
-import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+const journalIntro = "Some real-life plants and garden snapshots...";
+
+export const metadata = buildPageMetadata({
   title: "Garden Journal",
-  description:
-    "Some real-life plants and garden snapshots...",
-  alternates: {
-    canonical: "/garden-journal",
-  },
-  openGraph: {
-    title: "Garden Journal | Garden Sim",
-    description:
-      "Some real-life plants and garden snapshots...",
-    url: "/garden-journal",
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: "Some real-life plants and garden snapshots...",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Garden Journal | Garden Sim",
-    description:
-      "Some real-life plants and garden snapshots...",
-    images: [siteConfig.ogImage],
-  },
-};
+  description: journalIntro,
+  canonicalPath: "/garden-journal",
+  ogImageAlt: "Some real-life plants and garden snapshots...",
+});
 
 export default function GardenJournalPage() {
   const entries = getJournalEntries();
 
   return (
     <SectionFrame aria-labelledby="garden-journal-heading" spacing="inner" shell={false}>
-      <div className="section-shell">
+      <SectionShell>
         <h1 id="garden-journal-heading" className="text-3xl sm:text-4xl">
           Garden Journal
         </h1>
         <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--text-muted)] sm:text-lg">
-          Some real-life plants and garden snapshots...
+          {journalIntro}
         </p>
-      </div>
+      </SectionShell>
       <div className="mt-6 grid gap-5 sm:mt-8 sm:gap-6">
         {entries.map((entry) => (
           <JournalCard key={entry.id} entry={entry} />

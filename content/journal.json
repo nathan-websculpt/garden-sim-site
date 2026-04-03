@@ -7,6 +7,7 @@
     "imagePosition": "50% 38%",
     "alt": "Sunflower from last season",
     "description": "This is a sunflower from last season.",
+    "publishedAt": "2026-03-31",
     "timestamp": "March 31, 2026"
   },
   {
@@ -17,6 +18,7 @@
     "imagePosition": "50% 60%",
     "alt": "Bell pepper seedlings",
     "description": "Seedlings! I have almost 50 Bell Pepper plants, 16 squash, 16 tomatoes, and a bunch of rudbeckia.",
+    "publishedAt": "2026-03-31",
     "timestamp": "March 31, 2026"
   },
   {
@@ -27,6 +29,7 @@
     "imagePosition": "50% 80%",
     "alt": "First seedling of the season this year",
     "description": "First seedling of the season this year.",
+    "publishedAt": "2026-03-31",
     "timestamp": "March 31, 2026"
   }
 ]
