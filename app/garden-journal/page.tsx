@@ -26,8 +26,8 @@ export default function GardenJournalPage() {
         </p>
       </SectionShell>
       <div className="mt-6 grid gap-5 sm:mt-8 sm:gap-6">
-        {entries.map((entry) => (
-          <JournalCard key={entry.id} entry={entry} />
+        {entries.map((entry, index) => (
+          <JournalCard key={entry.id} entry={entry} isLeadingImage={index === 0} />
         ))}
       </div>
     </SectionFrame>

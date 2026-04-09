@@ -13,6 +13,7 @@ import type { JournalEntry } from "@/lib/journal";
 
 type JournalCardProps = {
   entry: JournalEntry;
+  isLeadingImage?: boolean;
 };
 
 type JournalImageLightboxProps = {
@@ -206,7 +207,10 @@ function JournalImageLightbox({
   );
 }
 
-export default function JournalCard({ entry }: JournalCardProps) {
+export default function JournalCard({
+  entry,
+  isLeadingImage = false,
+}: JournalCardProps) {
   const [expanded, setExpanded] = useState(false);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const imageTriggerRef = useRef<HTMLButtonElement | null>(null);
@@ -231,6 +235,7 @@ export default function JournalCard({ entry }: JournalCardProps) {
             src={entry.image}
             alt={entry.alt}
             fill
+            priority={isLeadingImage}
             sizes="(min-width: 1280px) 650px, (min-width: 768px) 80vw, 95vw"
             className="object-cover"
             style={{ objectPosition: entry.imagePosition ?? "50% 50%" }}
