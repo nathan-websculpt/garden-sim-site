@@ -67,15 +67,15 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="mt-3 px-5">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
-                <p className="text-sm text-[var(--text-muted)] sm:max-w-[26rem]">
+            <div className="mt-4 px-4 sm:px-5">
+              <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between md:gap-4">
+                <p className="text-sm text-[var(--text-muted)] md:max-w-[26rem]">
                   Current art is AI-generated. Your support helps me hire artists
                   for future updates.
                 </p>
                 <a
                   href={siteConfig.links.itch}
-                  className="garden-button-secondary garden-image-play-cta min-h-11 w-full justify-center sm:w-auto sm:shrink-0"
+                  className="garden-button-secondary garden-image-play-cta min-h-11 w-full justify-center md:w-auto md:shrink-0"
                 >
                   Play the demo
                 </a>

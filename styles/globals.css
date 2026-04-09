@@ -172,13 +172,14 @@ a {
 }
 
 .garden-button-accent {
-  border: 1px solid transparent;
-  background: var(--poppy);
-  color: #fffaf4;
+  border: 1px solid rgba(145, 171, 137, 0.78);
+  background: #edf5e8;
+  color: var(--deep-green);
 }
 
 .garden-button-accent:hover {
-  background: #be5949;
+  border-color: rgba(145, 171, 137, 0.96);
+  background: #e3efdb;
 }
 
 .garden-image-play-cta {

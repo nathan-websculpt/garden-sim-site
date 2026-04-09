@@ -26,25 +26,20 @@ export default function VideoSection() {
           />
         </div>
       </div>
-      <div className="mt-6 flex flex-wrap gap-3">
-        <a href={siteConfig.links.itch} className="garden-button-primary">
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+        <a
+          href={siteConfig.links.itch}
+          className="garden-button-primary min-h-11 w-full justify-center sm:w-auto"
+        >
           Play the demo &mdash; pay what you want
         </a>
         <a
           href={siteConfig.links.youtubeTrailer}
           target="_blank"
           rel="noopener noreferrer"
-          className="garden-button-secondary"
+          className="garden-button-secondary min-h-11 w-full justify-center sm:w-auto"
         >
           Open Trailer on YouTube
-        </a>
-        <a
-          href={siteConfig.links.kofi}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="garden-button-accent"
-        >
-          Support development on Ko-fi
         </a>
       </div>
     </SectionFrame>
