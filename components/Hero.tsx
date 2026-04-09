@@ -30,11 +30,17 @@ export default function Hero() {
                   <li>NPC helpers</li>
                 </ul>
               </div>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a href={siteConfig.links.itch} className="garden-button-primary">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                <a
+                  href={siteConfig.links.itch}
+                  className="garden-button-primary garden-button-primary-hero min-h-11 w-full justify-center sm:w-auto"
+                >
                   Play the demo &mdash; pay what you want
                 </a>
-                <a href="#demo-trailer" className="garden-button-secondary">
+                <a
+                  href="#demo-trailer"
+                  className="garden-button-secondary min-h-11 w-full justify-center sm:w-auto"
+                >
                   Watch the Demo Trailer
                 </a>
               </div>
@@ -61,10 +67,20 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <p className="mt-3 px-5 text-sm text-[var(--text-muted)]">
-              Current art is AI-generated. Your support helps me hire artists for
-              future updates.
-            </p>
+            <div className="mt-3 px-5">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+                <p className="text-sm text-[var(--text-muted)] sm:max-w-[26rem]">
+                  Current art is AI-generated. Your support helps me hire artists
+                  for future updates.
+                </p>
+                <a
+                  href={siteConfig.links.itch}
+                  className="garden-button-secondary garden-image-play-cta min-h-11 w-full justify-center sm:w-auto sm:shrink-0"
+                >
+                  Play the demo
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -147,6 +147,16 @@ a {
   color: var(--panel-bg);
 }
 
+.garden-button-primary-hero {
+  border-color: rgba(45, 68, 44, 0.42);
+  box-shadow: 0 14px 24px -18px rgba(46, 70, 45, 0.84);
+  padding-inline: 1.5rem;
+}
+
+.garden-button-primary-hero:hover {
+  border-color: rgba(45, 68, 44, 0.55);
+}
+
 .garden-button-primary:hover {
   background: #3f5a3d;
 }
@@ -169,6 +179,16 @@ a {
 
 .garden-button-accent:hover {
   background: #be5949;
+}
+
+.garden-image-play-cta {
+  border-color: rgba(145, 171, 137, 0.65);
+  background: #f3f8ee;
+  color: var(--deep-green);
+}
+
+.garden-image-play-cta:hover {
+  background: #eaf3e2;
 }
 
 .garden-button-primary:focus-visible,
