@@ -172,14 +172,14 @@ a {
 }
 
 .garden-button-accent {
-  border: 1px solid rgba(145, 171, 137, 0.78);
-  background: #edf5e8;
+  border: 1px solid #b59b5c;
+  background: #f2e7c7;
   color: var(--deep-green);
 }
 
 .garden-button-accent:hover {
-  border-color: rgba(145, 171, 137, 0.96);
-  background: #e3efdb;
+  border-color: #a88842;
+  background: #eddfb1;
 }
 
 .garden-image-play-cta {
@@ -197,6 +197,10 @@ a {
 .garden-button-accent:focus-visible {
   outline: 2px solid var(--moss);
   outline-offset: 2px;
+}
+
+.garden-button-accent:focus-visible {
+  outline-color: var(--deep-green);
 }
 
 .garden-chip {
