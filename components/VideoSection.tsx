@@ -29,6 +29,8 @@ export default function VideoSection() {
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
         <a
           href={siteConfig.links.itch}
+          target="_blank"
+          rel="noopener noreferrer"
           className="garden-button-primary min-h-11 w-full justify-center sm:w-auto"
         >
           Play the demo &mdash; pay what you want

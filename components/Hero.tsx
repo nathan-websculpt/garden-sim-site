@@ -33,6 +33,8 @@ export default function Hero() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 <a
                   href={siteConfig.links.itch}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="garden-button-primary garden-button-primary-hero min-h-11 w-full justify-center sm:w-auto"
                 >
                   Play the demo &mdash; pay what you want
@@ -75,6 +77,8 @@ export default function Hero() {
                 </p>
                 <a
                   href={siteConfig.links.itch}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="garden-button-secondary garden-image-play-cta min-h-11 w-full justify-center md:w-auto md:shrink-0"
                 >
                   Play the demo
