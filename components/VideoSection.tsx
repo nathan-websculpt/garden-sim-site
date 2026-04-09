@@ -37,7 +37,7 @@ export default function VideoSection() {
           href={siteConfig.links.youtubeTrailer}
           target="_blank"
           rel="noopener noreferrer"
-          className="garden-button-secondary min-h-11 w-full justify-center sm:w-auto"
+          className="garden-button-secondary min-h-11 w-full justify-center border-[#d8e3d7] bg-[var(--panel-bg-soft)] text-[var(--text-muted)] font-semibold sm:w-auto"
         >
           Open Trailer on YouTube
         </a>

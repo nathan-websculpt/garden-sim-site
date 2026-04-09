@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 const footerLinks = [
   { href: siteConfig.links.youtubeChannel, label: "YouTube Channel" },
   { href: siteConfig.links.itch, label: "itch.io Page" },
-  { href: siteConfig.links.kofi, label: "Ko-fi Support" },
+  { href: siteConfig.links.kofi, label: "Support Garden Sim" },
 ];
 
 export default function Footer() {
@@ -32,7 +32,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${
-                  link.label === "Ko-fi Support"
+                  link.href === siteConfig.links.kofi
                     ? "garden-button-accent"
                     : "garden-button-secondary"
                 }`}
