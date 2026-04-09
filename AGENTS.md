@@ -171,7 +171,7 @@ Current copy-aligned phrases include:
 - cozy gardening game
 - indie garden simulator
 - flowers and crops
-- demo is coming soon
+- demo is now live
 - garden morale
 - beekeeping
 

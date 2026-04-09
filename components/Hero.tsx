@@ -14,7 +14,7 @@ export default function Hero() {
                   A cozy gardening game that was made by a gardener
                 </p>
                 <p className="text-base leading-8 text-[var(--text-muted)] sm:text-lg">
-                  Demo is coming soon &mdash; an early look at one map and the overall direction of the game. Your support will go towards development 
+                  Demo is now live &mdash; an early look at one map and the overall direction of the game. Your support will go towards development 
                   and hiring an artist to re-make all of this AI art.
                 </p>
               </div>
@@ -30,16 +30,11 @@ export default function Hero() {
                 </ul>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#demo-trailer" className="garden-button-primary">
-                  Watch the Demo Trailer
+                <a href={siteConfig.links.itch} className="garden-button-primary">
+                  Play Now
                 </a>
-                <a
-                  href={siteConfig.links.kofi}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="garden-button-secondary"
-                >
-                  Support Development on Ko-fi
+                <a href="#demo-trailer" className="garden-button-secondary">
+                  Watch the Demo Trailer
                 </a>
               </div>
             </div>
@@ -51,7 +46,7 @@ export default function Hero() {
               <div className="pointer-events-none absolute right-10 top-3 h-4 w-4 rounded-full bg-[#d06a59]/65" />
               <div className="relative overflow-hidden rounded-[1.2rem] border border-[#d7e3d8] bg-[#f4f8f2]">
                 <div className="garden-chip absolute bottom-4 left-4 z-10 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">
-                  coming soon
+                  live now
                 </div>
                 <div className="relative aspect-[16/11]">
                   <Image

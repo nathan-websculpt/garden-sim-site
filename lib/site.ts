@@ -3,14 +3,14 @@ export const siteConfig = {
   domain: "garden-sim.com",
   url: "https://garden-sim.com",
   description:
-    "A cozy gardening game that was made by a gardener. Demo is coming soon - an early look at one map and the overall direction of the game.",
+    "A cozy gardening game that was made by a gardener. Demo is now live - an early look at one map and the overall direction of the game.",
   keywords: [
     "cozy gardening game",
     "indie garden simulator",
     "flowers and crops",
     "garden morale",
     "beekeeping",
-    "demo is coming soon",
+    "demo is now live",
   ],
   heroImage: "/images/home-hero.png",
   ogImage: "/images/og-cover.svg",

@@ -7,7 +7,7 @@ import VisionSection from "@/components/VisionSection";
 import { buildPageMetadata } from "@/lib/metadata";
 
 const homeMetadataDescription =
-  "Garden Sim is an indie garden simulator that I am building solo. Demo is coming soon - an early look at one map and the overall direction of the game.";
+  "Garden Sim is an indie garden simulator that I am building solo. Demo is now live - an early look at one map and the overall direction of the game.";
 
 export const metadata = buildPageMetadata({
   title: "A cozy gardening game that was made by a gardener",
