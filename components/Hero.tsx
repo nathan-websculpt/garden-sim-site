@@ -14,8 +14,9 @@ export default function Hero() {
                   A cozy gardening game that was made by a gardener
                 </p>
                 <p className="text-base leading-8 text-[var(--text-muted)] sm:text-lg">
-                  Demo is now live &mdash; an early look at one map and the overall direction of the game. Your support will go towards development 
-                  and hiring an artist to re-make all of this AI art.
+                  Demo is now live &mdash; an early look at one map and the overall
+                  direction of the game. The demo is pay what you want, and your
+                  support helps fund development and future art updates.
                 </p>
               </div>
               <div className="pt-6">
@@ -31,7 +32,7 @@ export default function Hero() {
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href={siteConfig.links.itch} className="garden-button-primary">
-                  Play Now
+                  Play the demo &mdash; pay what you want
                 </a>
                 <a href="#demo-trailer" className="garden-button-secondary">
                   Watch the Demo Trailer
@@ -61,7 +62,8 @@ export default function Hero() {
               </div>
             </div>
             <p className="mt-3 px-5 text-sm text-[var(--text-muted)]">
-              All art is AI-generated, but your support will help to hire artists
+              Current art is AI-generated. Your support helps me hire artists for
+              future updates.
             </p>
           </div>
         </div>

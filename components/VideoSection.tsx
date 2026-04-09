@@ -9,9 +9,9 @@ export default function VideoSection() {
           Demo
         </h2>
         <p className="max-w-2xl text-base leading-8 text-[var(--text-muted)]">
-          Here is a video of the gameplay.
-          Thanks for watching and supporting a solo-dev garden simulator in
-          active development.
+          Watch the gameplay first, then play the demo with pay-what-you-want
+          pricing whenever you&apos;re ready. Thanks for helping this solo-dev
+          garden simulator keep growing.
         </p>
       </div>
       <div className="garden-media-shell mt-8 overflow-hidden rounded-[1.4rem] shadow-[0_20px_40px_-32px_rgba(76,104,74,0.45)]">
@@ -27,6 +27,9 @@ export default function VideoSection() {
         </div>
       </div>
       <div className="mt-6 flex flex-wrap gap-3">
+        <a href={siteConfig.links.itch} className="garden-button-primary">
+          Play the demo &mdash; pay what you want
+        </a>
         <a
           href={siteConfig.links.youtubeTrailer}
           target="_blank"
@@ -39,9 +42,9 @@ export default function VideoSection() {
           href={siteConfig.links.kofi}
           target="_blank"
           rel="noopener noreferrer"
-          className="garden-button-primary"
+          className="garden-button-accent"
         >
-          Support on Ko-fi
+          Support development on Ko-fi
         </a>
       </div>
     </SectionFrame>
