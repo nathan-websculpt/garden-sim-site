@@ -1,5 +1,16 @@
 [
   {
+    "id": "entry-004",
+    "slug": "bearded-iris",
+    "title": "Bearded Iris",
+    "image": "/images/journal/bearded_iris.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Bearded Irises just started blooming",
+    "description": "Bearded Irises just started blooming.",
+    "publishedAt": "2026-04-09",
+    "timestamp": "April 4th, 2026"
+  },
+  {
     "id": "entry-003",
     "slug": "last-years-sunflower",
     "title": "Last Year's Sunflower",
