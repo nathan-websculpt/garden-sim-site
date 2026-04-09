@@ -23,6 +23,11 @@ export const siteConfig = {
   },
 } as const;
 
+export const metadataCopy = {
+  homeTitle: "A cozy gardening game that was made by a gardener",
+  homeOgImageAlt: "Garden Sim hero artwork with a cozy pixel-art garden scene",
+} as const;
+
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/garden-journal", label: "Garden Journal" },

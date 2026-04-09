@@ -17,6 +17,7 @@ Current visible website copy is the approved baseline and is intentionally locke
 - `components/Features.tsx`
 - `components/StoreSection.tsx`
 - `components/VideoSection.tsx`
+- `components/Footer.tsx`
 - `app/garden-journal/page.tsx`
 - `content/journal.json`
 - `app/how-to-play/page.tsx`
@@ -29,11 +30,11 @@ Current visible website copy is the approved baseline and is intentionally locke
 - "Demo is now live - an early look at one map and the overall direction of the game."
 - "Garden Sim is an indie garden simulator that I am building solo."
 - "The Vision for the Full Game"
-- "Here is a video of the gameplay."
+- "Watch the gameplay first, then play the demo with pay-what-you-want pricing whenever you're ready."
 
-## Placeholder Guidance
+## External Links Source
 
-Placeholder external links remain in `lib/site.ts`:
+Current external link targets are centralized in `lib/site.ts`:
 
 - `siteConfig.links.kofi`
 - `siteConfig.links.youtubeTrailer`
@@ -41,4 +42,4 @@ Placeholder external links remain in `lib/site.ts`:
 - `siteConfig.links.youtubeChannel`
 - `siteConfig.links.itch`
 
-Replace only link targets while preserving established copy tone around them.
+When links change, update only targets while preserving established copy tone around them.

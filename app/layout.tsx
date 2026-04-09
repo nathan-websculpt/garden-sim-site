@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Bree_Serif, Nunito_Sans } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { siteConfig } from "@/lib/site";
+import { metadataCopy, siteConfig } from "@/lib/site";
 import "@/styles/globals.css";
 
 const nunitoSans = Nunito_Sans({
@@ -17,10 +17,21 @@ const breeSerif = Bree_Serif({
   weight: "400",
 });
 
+const homeMetadataTitle = `${siteConfig.name} | ${metadataCopy.homeTitle}`;
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  description: siteConfig.description,
+  inLanguage: "en-US",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Garden Sim | A cozy gardening game that was made by a gardener",
+    default: homeMetadataTitle,
     template: "%s | Garden Sim",
   },
   description: siteConfig.description,
@@ -32,7 +43,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: "Garden Sim | A cozy gardening game that was made by a gardener",
+    title: homeMetadataTitle,
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
@@ -40,13 +51,13 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "Garden Sim hero artwork with a cozy pixel-art garden scene",
+        alt: metadataCopy.homeOgImageAlt,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Garden Sim | A cozy gardening game that was made by a gardener",
+    title: homeMetadataTitle,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
@@ -71,6 +82,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${nunitoSans.variable} ${breeSerif.variable}`}>
       <body className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>

@@ -147,8 +147,10 @@ type JournalEntry = {
   slug: string;
   title: string;
   image: string;
+  imagePosition?: string;
   alt: string;
   description: string;
+  publishedAt: string;
   timestamp: string;
 };
 ```
@@ -197,10 +199,11 @@ Current copy-aligned phrases include:
 
 ---
 
-## External Links (placeholders)
+## External Links (current targets)
 
 - Ko-fi: https://ko-fi.com/gardensim
-- YouTube: REPLACE_ME_LATER
+- YouTube Trailer: https://www.youtube.com/watch?v=NMSl7ALI3FU
+- YouTube Channel: https://www.youtube.com/@garden-sim
 - itch.io: https://garden-sim.itch.io/garden-sim
 
 ---
