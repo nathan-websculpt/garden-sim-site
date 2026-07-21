@@ -1,5 +1,126 @@
 [
   {
+    "id": "entry-015",
+    "slug": "hardy-hibiscus-1",
+    "title": "Hardy Hibiscus",
+    "image": "/images/journal/hardy_hibiscus_1.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Hardy Hibiscus",
+    "description": "This particular Hardy Hibiscus can grow over 10 feet tall, and it can make a good wall of foliage and flowers.",
+    "publishedAt": "2026-07-21",
+    "timestamp": "July 17th, 2026"
+  },
+  {
+    "id": "entry-014",
+    "slug": "dahlia-1",
+    "title": "Dahlia",
+    "image": "/images/journal/dahlia_1.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Dahlia",
+    "description": "The Dahlia is a cut-flower that we started growing after being inspired by Floret Flower Farm.",
+    "publishedAt": "2026-07-21",
+    "timestamp": "June 22nd, 2026"
+  },
+  {
+    "id": "entry-013",
+    "slug": "rudbeckia-1",
+    "title": "Rudbeckia",
+    "image": "/images/journal/rudbeckia_1.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Rudbeckia",
+    "description": "Beyond providing sturdy and durable cut-flowers, the Rudbeckia will come back each year, and they grow great alongside Echinacea.",
+    "publishedAt": "2026-07-21",
+    "timestamp": "June 22nd, 2026"
+  },
+  {
+    "id": "entry-012",
+    "slug": "marigold-1",
+    "title": "Marigold",
+    "image": "/images/journal/marigold_1.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Marigold",
+    "description": "Marigolds are one of the most important flowers in my garden due to the fact it offers pest resistance to my tomatoes by repelling whiteflies and reducing harmful soil nematodes. They release natural chemicals that confuse pests and destroy nematode eggs. All while bringing in pollinators!",
+    "publishedAt": "2026-07-21",
+    "timestamp": "June 15th, 2026"
+  },
+  {
+    "id": "entry-011",
+    "slug": "nasturtium-2",
+    "title": "Peach Melba Nasturtium",
+    "image": "/images/journal/nasturtium_2.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Peach Melba Nasturtium",
+    "description": "Peach Melba's blooms can go in your salad, and its seeds can replace pepper. I call this one \"the chef's nasturtium\".",
+    "publishedAt": "2026-07-21",
+    "timestamp": "May 18th, 2026"
+  },
+  {
+    "id": "entry-010",
+    "slug": "lily-3",
+    "title": "Lily (Pink)",
+    "image": "/images/journal/lily_3.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Lily (Pink)",
+    "description": "While not all 'lilies' are true lilies, please note that true lilies are extremely toxic to cats. Always think about the pets while designing your garden.",
+    "publishedAt": "2026-07-21",
+    "timestamp": "May 18th, 2026"
+  },
+  {
+    "id": "entry-009",
+    "slug": "nasturtium-1",
+    "title": "Dwarf Jewel Nasturtium",
+    "image": "/images/journal/nasturtium_1.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Dwarf Jewel Nasturtium",
+    "description": "The Dwarf Jewel Nasturtium did not perform very well in my zone (a very humid 8a), but I have seen that they work great in San Diego. I've had way too much daily rain, so perhaps that was the problem. I will try again next year.",
+    "publishedAt": "2026-07-21",
+    "timestamp": "May 16th, 2026"
+  },
+  {
+    "id": "entry-008",
+    "slug": "lily-2",
+    "title": "Lily (Dark Red)",
+    "image": "/images/journal/lily_2.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Lily (Dark Red)",
+    "description": "Lilies go back thousands of years, with the Madonna being one of the oldest know cultivars of any flower. Did you know Egyptians made famous, ancient perfumes with lilies, myrrh, and cinnamon?",
+    "publishedAt": "2026-07-21",
+    "timestamp": "May 16th, 2026"
+  },
+  {
+    "id": "entry-007",
+    "slug": "lily-1",
+    "title": "Lily (Yellow and Peach)",
+    "image": "/images/journal/lily_1.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Lily (Yellow and Peach)",
+    "description": "Humans and lilies have a long, symbolic history together: Lilies are the traditional birth flower for May and the classic flower to celebrate a 30th wedding anniversary.",
+    "publishedAt": "2026-07-21",
+    "timestamp": "May 11th, 2026"
+  },
+  {
+    "id": "entry-006",
+    "slug": "petunias",
+    "title": "The Petunias Self-Seeded",
+    "image": "/images/journal/petunias.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Petunias",
+    "description": "Petunias are beautiful flowers that thrive. One of them even grew from a crack in our concrete.",
+    "publishedAt": "2026-07-21",
+    "timestamp": "May 11th, 2026"
+  },
+  {
+    "id": "entry-005",
+    "slug": "tropical-hibiscus",
+    "title": "Tropical Hibiscus",
+    "image": "/images/journal/tropical_hibiscus.jpg",
+    "imagePosition": "50% 38%",
+    "alt": "Tropical Hibiscus",
+    "description": "Tropical Hibiscus is my favorite. They offer very durable and extraordinarily vibrant blooms that work in salads and teas.",
+    "publishedAt": "2026-07-21",
+    "timestamp": "May 9th, 2026"
+  },
+  {
     "id": "entry-004",
     "slug": "bearded-iris",
     "title": "Bearded Iris",
