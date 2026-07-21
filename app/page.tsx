@@ -1,5 +1,6 @@
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import HomepageUpdateBanner from "@/components/HomepageUpdateBanner";
 import SectionFrame from "@/components/SectionFrame";
 import StoreSection from "@/components/StoreSection";
 import VideoSection from "@/components/VideoSection";
@@ -20,6 +21,7 @@ export const metadata = buildPageMetadata({
 export default function HomePage() {
   return (
     <>
+      <HomepageUpdateBanner />
       <Hero />
       <SectionFrame
         aria-labelledby="about-game"

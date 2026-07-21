@@ -35,9 +35,10 @@ function JournalImageLightbox({
   onClose,
   triggerRef,
 }: JournalImageLightboxProps) {
+  const dialogRef = useRef<HTMLDialogElement | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const imageFrameRef = useRef<HTMLDivElement | null>(null);
-  const handleBackdropClick = (event: MouseEvent<HTMLDivElement>) => {
+  const handleBackdropClick = (event: MouseEvent<HTMLDialogElement>) => {
     const frameElement = imageFrameRef.current;
     if (!frameElement) {
       onClose();
@@ -98,35 +99,12 @@ function JournalImageLightbox({
       return;
     }
 
-    closeButtonRef.current?.focus();
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (!isOpen) {
+    const dialogElement = dialogRef.current;
+    if (!dialogElement?.isConnected) {
       return;
     }
 
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key !== "Escape") {
-        return;
-      }
-
-      event.preventDefault();
-      onClose();
-    };
-
-    window.addEventListener("keydown", handleEscape);
-
-    return () => {
-      window.removeEventListener("keydown", handleEscape);
-    };
-  }, [isOpen, onClose]);
-
-  useEffect(() => {
-    if (!isOpen) {
-      return;
-    }
-
+    const triggerElement = triggerRef.current;
     const { body } = document;
     const scrollY = window.scrollY;
     const previousOverflow = body.style.overflow;
@@ -136,12 +114,17 @@ function JournalImageLightbox({
     const previousRight = body.style.right;
     const previousWidth = body.style.width;
 
+    if (!dialogElement.open) {
+      dialogElement.showModal();
+    }
+
     body.style.overflow = "hidden";
     body.style.position = "fixed";
     body.style.top = `-${scrollY}px`;
     body.style.left = "0";
     body.style.right = "0";
     body.style.width = "100%";
+    closeButtonRef.current?.focus({ preventScroll: true });
 
     return () => {
       body.style.overflow = previousOverflow;
@@ -150,19 +133,16 @@ function JournalImageLightbox({
       body.style.left = previousLeft;
       body.style.right = previousRight;
       body.style.width = previousWidth;
+
+      if (dialogElement.open) {
+        dialogElement.close();
+      }
+
+      if (triggerElement?.isConnected) {
+        triggerElement.focus({ preventScroll: true });
+      }
+
       window.scrollTo(0, scrollY);
-    };
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (!isOpen) {
-      return;
-    }
-
-    const triggerElement = triggerRef.current;
-
-    return () => {
-      triggerElement?.focus();
     };
   }, [isOpen, triggerRef]);
 
@@ -171,11 +151,16 @@ function JournalImageLightbox({
   }
 
   return createPortal(
-    <div
+    <dialog
+      ref={dialogRef}
       role="dialog"
       aria-modal="true"
       aria-label={label}
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-black/75 p-2 sm:p-4"
+      className="fixed inset-0 z-[60] m-0 h-auto w-auto max-h-none max-w-none items-center justify-center overflow-hidden border-0 bg-black/75 p-2 text-inherit open:flex backdrop:bg-transparent sm:p-4"
+      onCancel={(event) => {
+        event.preventDefault();
+        onClose();
+      }}
       onClick={handleBackdropClick}
     >
       <button
@@ -202,7 +187,7 @@ function JournalImageLightbox({
           className="object-contain"
         />
       </div>
-    </div>,
+    </dialog>,
     document.body,
   );
 }

@@ -20,6 +20,7 @@ export const siteConfig = {
     youtubeEmbed: "https://www.youtube.com/embed/NMSl7ALI3FU?si=-SpbU-qk5fk22CHl",
     youtubeChannel: "https://www.youtube.com/@garden-sim",
     itch: "https://garden-sim.itch.io/garden-sim",
+    prototype3d: "https://garden-sim.itch.io/garden-sim-3d-prototype-1",
   },
 } as const;
 
