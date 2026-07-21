@@ -1,14 +1,16 @@
+import HowToPlayTabs from "@/components/HowToPlayTabs";
 import SectionFrame from "@/components/SectionFrame";
 import { buildPageMetadata } from "@/lib/metadata";
+import { metadataCopy } from "@/lib/site";
 
 const howToPlayMetadataDescription =
-  "This page is growing next. I will add the full How-to-Play later on ...";
+  "Getting Started, Controls, Garden Morale, and Advanced help for Garden Sim.";
 
 export const metadata = buildPageMetadata({
   title: "How to Play",
   description: howToPlayMetadataDescription,
   canonicalPath: "/how-to-play",
-  ogImageAlt: "This page is growing next.",
+  ogImageAlt: metadataCopy.homeOgImageAlt,
 });
 
 export default function HowToPlayPage() {
@@ -17,12 +19,7 @@ export default function HowToPlayPage() {
       <h1 id="how-to-play-heading" className="text-3xl sm:text-4xl">
         How to Play
       </h1>
-      <p className="mt-4 max-w-2xl text-base leading-8 text-[var(--text-muted)] sm:text-lg">
-        This page is growing next.
-      </p>
-      <p className="mt-3 max-w-2xl text-base leading-8 text-[var(--text-muted)] sm:text-lg">
-        I will add the full How-to-Play later on ...
-      </p>
+      <HowToPlayTabs />
     </SectionFrame>
   );
 }
