@@ -198,7 +198,7 @@ function JournalImageLightbox({
           src={src}
           alt={alt}
           fill
-          sizes="96vw"
+          sizes="min(96vw, 50.625vh)"
           className="object-contain"
         />
       </div>
@@ -235,8 +235,8 @@ export default function JournalCard({
             src={entry.image}
             alt={entry.alt}
             fill
-            priority={isLeadingImage}
-            sizes="(min-width: 1280px) 650px, (min-width: 768px) 80vw, 95vw"
+            preload={isLeadingImage}
+            sizes="(min-width: 1184px) 1120px, (min-width: 1024px) calc(100vw - 64px), (min-width: 640px) calc(100vw - 48px), calc(100vw - 32px)"
             className="object-cover"
             style={{ objectPosition: entry.imagePosition ?? "50% 50%" }}
           />
