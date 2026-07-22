@@ -26,8 +26,7 @@ export default function StoreSection() {
           <article className="garden-card rounded-3xl bg-[color-mix(in_oklab,var(--panel-bg-soft)_94%,white)] p-5 sm:p-6">
             <p className="text-base leading-8 text-[var(--text-muted)] sm:text-lg">
               You can also sell Wood and Fruits to help you save up to buy
-              bigger items like the water system or an apiary (for Bee
-              Keeping).
+              bigger items like the water system or an apiary (for Beekeeping).
             </p>
           </article>
         </div>
