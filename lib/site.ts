@@ -15,6 +15,7 @@ export const siteConfig = {
   heroImage: "/images/home-hero.png",
   ogImage: "/images/og-cover.svg",
   links: {
+    instagram: "https://www.instagram.com/garden_sim_game/",
     kofi: "https://ko-fi.com/gardensim",
     youtubeTrailer: "https://www.youtube.com/watch?v=NMSl7ALI3FU",
     youtubeEmbed: "https://www.youtube.com/embed/NMSl7ALI3FU?si=-SpbU-qk5fk22CHl",

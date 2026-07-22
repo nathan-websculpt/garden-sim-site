@@ -3,6 +3,7 @@ import { SectionShell } from "@/components/SectionFrame";
 import { siteConfig } from "@/lib/site";
 
 const footerLinks = [
+  { href: siteConfig.links.instagram, label: "New Instagram!" },
   { href: siteConfig.links.youtubeChannel, label: "YouTube Channel" },
   { href: siteConfig.links.itch, label: "itch.io Page" },
   { href: siteConfig.links.kofi, label: "Support Garden Sim" },
