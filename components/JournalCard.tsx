@@ -25,8 +25,6 @@ type JournalImageLightboxProps = {
   triggerRef: RefObject<HTMLButtonElement | null>;
 };
 
-const previewLength = 210;
-
 function JournalImageLightbox({
   isOpen,
   src,
@@ -196,13 +194,8 @@ export default function JournalCard({
   entry,
   isLeadingImage = false,
 }: JournalCardProps) {
-  const [expanded, setExpanded] = useState(false);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const imageTriggerRef = useRef<HTMLButtonElement | null>(null);
-  const canExpand = entry.description.length > previewLength;
-  const preview = `${entry.description.slice(0, previewLength).trimEnd()}...`;
-  const visibleDescription =
-    expanded || !canExpand ? entry.description : preview;
   const imageContextLabel = `${entry.title}: ${entry.alt}`;
 
   return (
@@ -238,17 +231,8 @@ export default function JournalCard({
       <div className="p-5 sm:p-6">
         <h2 className="text-2xl text-[var(--text-primary)]">{entry.title}</h2>
         <p className="mt-3 text-base leading-8 text-[var(--text-muted)]">
-          {visibleDescription}
+          {entry.description}
         </p>
-        {canExpand ? (
-          <button
-            type="button"
-            className="garden-button-secondary mt-3 px-4 py-2"
-            onClick={() => setExpanded((isExpanded) => !isExpanded)}
-          >
-            {expanded ? "Show less" : "Read more"}
-          </button>
-        ) : null}
         <p className="mt-5 text-right text-xs font-semibold uppercase tracking-[0.08em] text-[var(--text-muted)]">
           {entry.timestamp}
         </p>
