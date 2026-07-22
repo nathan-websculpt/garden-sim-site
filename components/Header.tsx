@@ -89,6 +89,7 @@ export default function Header() {
               className="h-6 w-auto md:h-8"
               width={95}
               height={24}
+              loading="eager"
               unoptimized
             />
           </a>

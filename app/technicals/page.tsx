@@ -17,6 +17,7 @@ export default function TechnicalsPage() {
       <h1 id="technicals-heading" className="text-3xl sm:text-4xl">
         Technicals
       </h1>
+      <h2 className="mt-6! text-2xl sm:text-3xl">2D Demo</h2>
       <p className="mt-4 max-w-2xl text-base leading-8 text-[var(--text-muted)] sm:text-lg">
         SDL3 game (no game engine used)
       </p>
@@ -74,6 +75,32 @@ export default function TechnicalsPage() {
           </ul>
         </li>
       </ul>
+      <section aria-labelledby="three-d-prototypes-heading" className="mt-10">
+        <h2 id="three-d-prototypes-heading" className="text-2xl sm:text-3xl">
+          3D prototypes
+        </h2>
+        <p className="mt-4 max-w-2xl text-base leading-8 text-[var(--text-muted)] sm:text-lg">
+          No more AI art! Your voices have been heard. There will be no more AI art, and due to the lack of funds/art &mdash; I will be falling back on math/code to generate the 3D world.
+        </p>
+        <ul className="mt-4 max-w-3xl list-disc pl-6 text-base leading-8 text-[var(--text-muted)] sm:text-lg">
+          <li>
+            Investigating/testing game engines
+            <ul className="mt-2 list-disc space-y-1 pl-6 text-sm leading-7 sm:text-base">
+              <li>browser-based versions of Garden Sim 3D</li>
+              <li>procedural land generation</li>
+              <li>
+                procedural oceans and waves
+                <ul className="mt-2 list-disc pl-6">
+                  <li>
+                    Garden Sim 3D will have fishing, shrimping, and cross-ocean
+                    travel to other lands
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </SectionFrame>
   );
 }
